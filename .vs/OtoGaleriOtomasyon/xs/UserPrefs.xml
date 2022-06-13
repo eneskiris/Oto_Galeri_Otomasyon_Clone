@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{955E002E-3E02-4E8D-A4B0-CF03C4239EAA}|Default" GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.ItemProperties.OtoGaleriOtomasyon PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="OtoGaleriOtomasyon/Program.cs">
+    <Files>
+      <File FileName="OtoGaleriOtomasyon/Program.cs" Line="13" Column="6" IsPinned="True" />
+      <File FileName="OtoGaleriOtomasyon/Uygulama.cs" Line="530" Column="14" />
+      <File FileName="OtoGaleriOtomasyon/Galeri.cs" Line="96" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="OtoGaleriOtomasyon" expanded="True">
+            <Node name="OtoGaleriOtomasyon" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
