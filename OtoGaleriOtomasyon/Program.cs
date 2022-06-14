@@ -8,7 +8,7 @@ namespace OtoGaleriOtomasyon
     {
         static void Main(string[] args)
         {
-            Uygulama.UygulamaBaslangic();
+            new Uygulama().UygulamaBaslangic();
             
         }
     }

@@ -6,9 +6,9 @@ namespace OtoGaleriOtomasyon
 {
     class Uygulama
     {
-        static Galeri OtoGaleri = new Galeri();
+        Galeri OtoGaleri = new Galeri();
        
-        public static void UygulamaBaslangic()
+        public void UygulamaBaslangic()
         {
            
             SahteVeri();
@@ -63,7 +63,7 @@ namespace OtoGaleriOtomasyon
             }
             //switch case yapısı ve seçim al...
         }
-        public static void Menu()
+        public void Menu()
         {
             Console.WriteLine("Galeri Otomasyon");
             Console.WriteLine("1- Araba Kirala (K)");
@@ -76,7 +76,7 @@ namespace OtoGaleriOtomasyon
             Console.WriteLine("8- Araba Sil (S)");
             Console.WriteLine("9- Bilgileri Göster (G)");
         }//menu end
-        public static string SecimAl()
+        public string SecimAl()
         {
             string karakterler = "123456789KTRMAIYSG";
 
@@ -97,7 +97,7 @@ namespace OtoGaleriOtomasyon
             }
 
         }
-        public static void ArabaKirala(string plaka, int sure)
+        public void ArabaKirala(string plaka, int sure)
         {
 
             Araba a = null;
@@ -121,7 +121,7 @@ namespace OtoGaleriOtomasyon
             }
 
         }
-        public static void ArabaTeslimAl(string plaka)
+        public void ArabaTeslimAl(string plaka)
         {
 
             Araba a = null;
@@ -144,7 +144,7 @@ namespace OtoGaleriOtomasyon
             }
 
         }
-        public static void ArabaKirala()
+        public void ArabaKirala()
         {
             Console.WriteLine("-Araba Kirala-");
             while (true)
@@ -192,7 +192,7 @@ namespace OtoGaleriOtomasyon
             }
         }
         
-        public static void ArabaTeslimAl()
+        public void ArabaTeslimAl()
         {
             Console.WriteLine("-Araba Teslim Al-");
             while (true)
@@ -233,7 +233,7 @@ namespace OtoGaleriOtomasyon
                 }
             }
         }
-        public static void KiralamaIptali()
+        public void KiralamaIptali()
         {
             Console.WriteLine("-Kiralama İptali-");
             string mesaj = "Kiralaması iptal edilecek arabanın plakası: ";
@@ -242,7 +242,6 @@ namespace OtoGaleriOtomasyon
             {
                 bool sonuc;
                 string plaka;
-                string teslim;
                 
                 do
                 {
@@ -282,7 +281,7 @@ namespace OtoGaleriOtomasyon
                 
             }
         }
-        public static void ArabaEkle()
+        public void ArabaEkle()
         {
             Console.WriteLine("-Araba Ekle-");
             while (true)
@@ -364,12 +363,11 @@ namespace OtoGaleriOtomasyon
 
             }
         }
-        public static void ArabaSil()
+        public void ArabaSil()
         {
             Console.WriteLine("-Araba Sil-");
             bool sonuc;
             string plaka;
-            bool ikinci;
             Console.Write("Silmek istediğiniz arabanın plakasını giriniz: ");
             plaka = Console.ReadLine().ToUpper();
             sonuc = PlakaKontrol(plaka);
@@ -428,7 +426,7 @@ namespace OtoGaleriOtomasyon
 
 
         }
-        public static void GaleriBilgileri()
+        public void GaleriBilgileri()
         {
             Console.WriteLine("-Galeri Bilgileri-");
             Console.WriteLine("Toplam araba sayısı: " + OtoGaleri.ToplamArabaSayisi);
@@ -438,7 +436,7 @@ namespace OtoGaleriOtomasyon
             Console.WriteLine("Toplam araba kiralama adedi: " + OtoGaleri.ToplamArabaKiralamaAdedi);
             Console.WriteLine("Ciro: " + OtoGaleri.Ciro);
         }
-        public static bool PlakaKontrol(string plaka)
+        public bool PlakaKontrol(string plaka)
         {
 
             while (true)
@@ -497,7 +495,7 @@ namespace OtoGaleriOtomasyon
             }
 
         }
-        public static string MarkaDuzenleme(string mesaj)
+        public string MarkaDuzenleme(string mesaj)
         {
             string marka;
             while (true)
@@ -523,7 +521,7 @@ namespace OtoGaleriOtomasyon
                 }
             }
         }
-        public static float SayiAl(string mesaj)
+        public float SayiAl(string mesaj)
         {
 
             while (true)
@@ -541,7 +539,7 @@ namespace OtoGaleriOtomasyon
 
             }
         }
-        public static void SahteVeri()
+        public void SahteVeri()
         {
             Araba a = new Araba("34TT2305", "OPEL", 50, Araba.ARABA_TIPI.Hatchback);
             Araba b = new Araba("36MN2304", "FİAT", 150, Araba.ARABA_TIPI.Sedan);
